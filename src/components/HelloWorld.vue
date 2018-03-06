@@ -5,6 +5,7 @@
     <p>mixin 数据 ：{{ testMixinArg }}</p>
     <p>store 数据 ：{{ info.data }}</p>
     <RC></RC>
+    <SEU></SEU>
   </div>
 </template>
 
@@ -12,12 +13,14 @@
 import Vue from 'vue'
 import Component from 'vue-class-component'
 import RC from './renderComponent.vue'
+import SEU from './StartElementUi.vue'
 import TestMixin from '../mixins/test-mixin'
 import { Getter } from 'vuex-class'
 
 @Component({
   components: {
-    RC
+    RC,
+    SEU
   },
   mixins: [TestMixin]
 })
